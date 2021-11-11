@@ -25,6 +25,8 @@ func accountDelete(w http.ResponseWriter, r *http.Request) {
 }
 
 func handleRequests() {
+	fmt.Println("Look at me! I'm a webserver, and I'm starting up!")
+
 	http.HandleFunc("/", homePage)
 	http.HandleFunc("/api/account", accountHandler)
 	http.HandleFunc("/api/account/create", accountCreate)
