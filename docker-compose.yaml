@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  web:
+    image: docker-basic-web:multistage
+    build:
+      context: .
+      dockerfile: Dockerfile.multistage
+    ports:
+      - "10000:10000"
